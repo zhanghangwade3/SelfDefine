@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CustomTitleView-->
+    <attr name="titleText" format="string" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="titleTextSize" format="dimension" />
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText" />
+        <attr name="titleTextColor" />
+        <attr name="titleTextSize" />
+    </declare-styleable>
+
+
+    <!--CustomImageView-->
+    <attr name="image" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+    <declare-styleable name="CustomImageView">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+
+
+    <!-- CustomView  带阴影的按钮，按钮正下方有文字说明-->
+    <declare-styleable name="custom_view">
+        <attr name="custom_id" format="integer" />
+        <attr name="src" format="reference" />
+        <attr name="backg" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+
+    <!--CircleProgressView 进度条-->
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="speed" format="integer" />
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="speed" />
+    </declare-styleable>
+
+
+    <!--接收Touch事件自定义控件-->
+    <!--<attr name="firstColor" format="color" />-->
+    <!--<attr name="secondColor" format="color" />-->
+    <!--<attr name="circleWidth" format="dimension" />-->
+    <attr name="bg" format="reference" />
+    <attr name="dotCount" format="integer" />
+    <attr name="splitSize" format="integer" />
+    <declare-styleable name="CustomVolumControlBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="dotCount" />
+        <attr name="splitSize" />
+        <attr name="bg" />
+    </declare-styleable>
+
+
+    <!--属性值具体意义详述：
+            reference：参考某一资源ID
+            color：颜色值
+            boolean：布尔值
+            dimension：尺寸值
+            float：浮点值
+            integer：整型值
+            string：字符串
+            fraction：百分数
+            enum：枚举值
+            flag：位或运算
+            多类型：
+                <declare-styleable name = "名称">
+                <attr name = "background" format = "reference|color" />
+                </declare-styleable>
+    -->
+
+
+</resources>

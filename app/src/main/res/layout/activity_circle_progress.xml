@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:proCicle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <future.com.selfdefineviewfirst.view.CircleProgressView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        proCicle:circleWidth="10sp"
+        proCicle:firstColor="@color/green"
+        proCicle:secondColor="@color/gold"
+        proCicle:speed="10" />
+
+
+    <future.com.selfdefineviewfirst.view.CircleProgressView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        proCicle:circleWidth="15sp"
+        proCicle:firstColor="@color/yellow"
+        proCicle:secondColor="@color/purple"
+        proCicle:speed="15" />
+
+    <!--    <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="dotCount" />
+        <attr name="splitSize" />
+        <attr name="bg" />-->
+    <future.com.selfdefineviewfirst.view.TouchEventView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        proCicle:bg="@mipmap/a9"
+        proCicle:circleWidth="20sp"
+        proCicle:dotCount="15"
+        proCicle:firstColor="@color/red"
+        proCicle:secondColor="@color/indigo"
+        proCicle:splitSize="20" />
+</LinearLayout>

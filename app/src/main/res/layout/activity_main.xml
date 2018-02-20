@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <future.com.selfdefineviewfirst.view.CustomTitleView
+        android:id="@+id/text_self_define"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="自定义控件属性：标题文字"
+        app:titleTextColor="@color/green"
+        app:titleTextSize="18sp" />
+
+    <future.com.selfdefineviewfirst.view.CustomView
+        android:id="@+id/custom1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/text_self_define"
+        nanlus:background="@mipmap/a7"
+        nanlus:custom_id="1"
+        nanlus:src="@mipmap/a1"
+        nanlus:text="按钮1" />
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom1"
+        android:onClick="changeNextPage"
+        android:text="换一页" />
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_1"
+        android:onClick="changeToProgress"
+        android:text="换进度页" />
+</RelativeLayout>
